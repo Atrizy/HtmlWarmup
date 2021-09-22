@@ -1,0 +1,45 @@
+a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  word-spacing: 0.07em;
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: red;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  font-size: small;
+  color: white;
+}
+
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 21000;
+  color: white;
+}
+
+section {
+  font-style: oblique;
+  font-weight: 500;
+  color: white;
+}
+
+article {
+  width: 500px;
+  height: auto;
+  color: white;
+}
+
+body {
+  background-color: rgb(116, 119, 181);
+}
