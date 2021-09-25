@@ -3,8 +3,22 @@ a {
   color: blue;
 }
 
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: rgb(23, 110, 49);
+}
+
 a:hover {
   color: red;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 4px;
+}
+
+a:active {
+  box-shadow: 1px 1px 1px grey;
 }
 
 nav {
@@ -27,4 +41,20 @@ video {
 
 .textstyle {
   width: 100px;
+}
+
+article > h2 {
+  color: purple;
+}
+
+h2 + p {
+  background-color: aqua;
+  font-weight: bold;
+  color: rgb(68, 75, 73);
+  width: 600px;
+}
+
+div p {
+  background-color: blanchedalmond;
+  color: darkred;
 }
