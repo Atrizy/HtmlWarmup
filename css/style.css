@@ -64,7 +64,7 @@ div {
 
 body {
   width: 100%;
-  display: flex;
+  margin: auto;
 }
 
 div {
