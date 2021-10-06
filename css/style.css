@@ -1,127 +1,86 @@
-a {
-  text-decoration: none;
-  color: blue;
-}
-
-a:link {
-  color: pink;
-}
-
-a:visited {
-  color: rgb(23, 110, 49);
-}
-
-a:hover {
-  color: red;
-  box-shadow: 3px 3px 3px grey;
-  border-radius: 4px;
-}
-
-a:active {
-  box-shadow: 1px 1px 1px grey;
-}
-
-nav {
-  word-spacing: 1in;
-  white-space: nowrap;
-}
-
-img {
-  border-radius: 8px;
-  width: 300px;
-  height: 300px;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-.align {
-  display: flex;
-  align-items: top;
-}
-
-.textstyle {
-  width: 100px;
-}
-
-article > h2 {
-  color: purple;
-}
-
-div {
-  display: inline-block;
-  place-items: center;
-  margin: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  margin: auto;
+#logo {
+  justify-self: start;
 }
 
-div {
-  position: relative;
-}
-input[type="checkbox"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-h2 {
-  font-size: 30px;
-  font-weight: 400;
-  color: #4a19ff;
-  margin: 20px 0 0;
-}
-label {
-  cursor: pointer;
-}
-label {
-  position: relative;
-  display: block;
-  padding-left: 30px;
-  font-family: "Spicy Rice", cursive;
-}
-label::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 50%;
-  left: 10px;
-  border-left: 8px solid black;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  margin-top: -8px;
-}
-input[type="checkbox"]:checked ~ h2 label::before {
-  border-left: 8px solid transparent;
-  border-top: 8px solid black;
-  border-right: 8px solid transparent;
-  margin-left: -4px;
-  margin-top: -4px;
+#header {
+  background-color: rgb(231, 184, 89);
+  display: grid;
+  grid-template-columns: 9fr 0.5fr 0.5fr;
+  overflow: auto;
+  grid-auto-flow: column;
+  column-gap: 10px;
+  row-gap: 5px;
+  min-height: 60px;
+  justify-items: end;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
 }
 
-p {
-  max-height: 0;
-  overflow: hidden;
-  padding-left: 30px;
-  transition: max-height 0.4s ease;
-  font-family: "Habibi", serif;
-  white-space: nowrap;
+#header > a > img {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
 }
 
-input[type="checkbox"]:checked ~ h2 ~ p {
-  max-height: 80px;
+#header > a {
+  color: red;
+  padding: 10px;
+}
+
+#header > a:hover {
+  color: darkorange;
+}
+
+#header > a:active {
+  color: blue;
+  box-shadow: 3px 3px 3px grey;
+}
+
+#body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill minmax(250px 1fr));
+}
+
+#body > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-self: center;
+  margin-top: 5vw;
+}
+
+#body > article {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 75vw;
+  justify-self: center;
+  padding: 10px;
+}
+
+#body > iframe {
+  align-items: center;
+  justify-self: center;
+  max-width: 100%;
+}
+
+footer > a {
+  color: red;
+}
+
+footer > a:hover {
+  color: darkorange;
+}
+
+footer > a:active {
+  color: blue;
+  box-shadow: 3px 3px 3px grey;
+}
+
+footer > a:visited {
+  color: purple;
 }
