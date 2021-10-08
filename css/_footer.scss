@@ -1,0 +1,32 @@
+#information {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+#information > a {
+  color: red;
+}
+
+#information > a:hover {
+  color: darkorange;
+}
+
+#information > a:active {
+  color: blue;
+  box-shadow: 3px 3px 3px grey;
+}
+
+#information > a:visited {
+  color: purple;
+}
+
+@media only screen and (min-width: 768px) {
+  #information {
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+    margin-top: 5vh;
+  }
+}
